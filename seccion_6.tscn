@@ -1,0 +1,61 @@
+[gd_scene format=3 uid="uid://beilrx7xhj1s0"]
+
+[ext_resource type="PackedScene" uid="uid://b3f5e2rxkqro1" path="res://Modelos2/MAPA 3.glb" id="1_2ha13"]
+[ext_resource type="PackedScene" uid="uid://ddesmvgwuyhmo" path="res://Modelos2/Fogata.glb" id="2_trtc3"]
+[ext_resource type="PackedScene" uid="uid://cge6nhkxxa3ux" path="res://Modelos3/MAPA 4 Y 5.glb" id="3_arsbu"]
+[ext_resource type="PackedScene" uid="uid://dfx5ranujetlo" path="res://Modelos/MAPA 1 Y 2.glb" id="4_amed0"]
+[ext_resource type="PackedScene" uid="uid://de6abpt7lw8wg" path="res://Mapa6/MAPA 6.glb" id="5_2ha13"]
+[ext_resource type="PackedScene" uid="uid://wscjg0nx2f0p" path="res://Mapa6/JARDIN COMPLETO Y OPTIMIZADO.glb" id="6_trtc3"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_db4kb"]
+
+[sub_resource type="Sky" id="Sky_db4kb"]
+sky_material = SubResource("ProceduralSkyMaterial_db4kb")
+
+[sub_resource type="Environment" id="Environment_db4kb"]
+background_mode = 2
+background_color = Color(1, 1, 1, 1)
+sky = SubResource("Sky_db4kb")
+ambient_light_source = 2
+ambient_light_color = Color(0.8413226, 0.8642151, 0.88369393, 1)
+ambient_light_energy = 10.0
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_mhawg"]
+
+[node name="Seccion1" type="Node3D" unique_id=561212832]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=2099351060]
+transform = Transform3D(0.23072965, 0.93508446, 0.26903707, -0.32648218, -0.1860684, 0.9267081, 0.9166098, -0.301655, 0.26235694, 21.184834, 17.909344, 13.349861)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="DirectionalLight3D" unique_id=2053631759]
+environment = SubResource("Environment_db4kb")
+
+[node name="MAPA 32" parent="." unique_id=190547584 instance=ExtResource("1_2ha13")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 47.849144, 0.21741295, 3.3761463)
+
+[node name="Camera3D" type="Camera3D" parent="MAPA 32" unique_id=1806350990]
+transform = Transform3D(0.02780332, -0.44969994, 0.8927468, -0.0116928015, 0.89288473, 0.45013353, -0.99954504, -0.022953916, 0.019566905, 9.307506, 11.314275, -28.389442)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MAPA 32" unique_id=1156256179]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MAPA 32/StaticBody3D" unique_id=45916819]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -177.00612, -179.3444, 124.63303)
+shape = SubResource("ConcavePolygonShape3D_mhawg")
+
+[node name="Fogata" parent="." unique_id=1195773472 instance=ExtResource("2_trtc3")]
+transform = Transform3D(1, 0, 0, 0, 0.9953728, -0.096088976, 0, 0.096088976, 0.9953728, 25.290285, 2.6008844, -10.510998)
+
+[node name="SpawnPoint" type="Marker3D" parent="." unique_id=2128742377]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.441137, 0, -10.833469)
+
+[node name="MAPA 4 Y 52" parent="." unique_id=304415251 instance=ExtResource("3_arsbu")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 49.735085, 3.069847, 25.568096)
+
+[node name="MAPA 1 Y 22" parent="." unique_id=927623458 instance=ExtResource("4_amed0")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 71.345924, 0.7646866, -72.499115)
+
+[node name="MAPA 62" parent="." unique_id=1645646721 instance=ExtResource("5_2ha13")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 44.988434, 3.2770596, -14.390995)
+
+[node name="JARDIN COMPLETO Y OPTIMIZADO" parent="." unique_id=424989633 instance=ExtResource("6_trtc3")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 66.263954, 4.365654, -16.222641)

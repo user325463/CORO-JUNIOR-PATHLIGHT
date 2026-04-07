@@ -1,0 +1,847 @@
+[gd_scene format=3 uid="uid://bb0e7fwy2uqxj"]
+
+[ext_resource type="PackedScene" uid="uid://chlj2soh613ej" path="res://MODELOS/MAPA 1 Y 2/MAPA 1 Y 2.glb" id="1_yqfl2"]
+[ext_resource type="PackedScene" uid="uid://bfr8fl7dvwgpy" path="res://MODELOS/MAPA 1 Y 2/Carpa.glb" id="2_xovbl"]
+[ext_resource type="PackedScene" uid="uid://y8n47nh6ecgj" path="res://MODELOS/MAPA 1 Y 2/Mandamientos.glb" id="3_e8cge"]
+[ext_resource type="PackedScene" uid="uid://qnlgfsu8yud1" path="res://MODELOS/MAPA 1 Y 2/Binoculares.glb" id="4_2ckk8"]
+[ext_resource type="PackedScene" uid="uid://chg7lrntu6xtl" path="res://MODELOS/MAPA 1 Y 2/Ovejas.glb" id="5_ykn14"]
+[ext_resource type="PackedScene" uid="uid://w3x3ox0jwsfv" path="res://MODELOS/MAPA 1 Y 2/Biblia.glb" id="6_trnem"]
+[ext_resource type="PackedScene" uid="uid://bh7tswmnmdocv" path="res://MODELOS/MAPA 1 Y 2/Fogata.glb" id="7_cj2vl"]
+[ext_resource type="PackedScene" uid="uid://dv8n8mdbmxxyc" path="res://MODELOS/MAPA 3/MAPA 3.glb" id="8_xovbl"]
+[ext_resource type="PackedScene" uid="uid://dt6w2m4knc2j4" path="res://MODELOS/MAPA 7 Y 8/MAPA 7 Y 8.glb" id="9_e8cge"]
+[ext_resource type="PackedScene" uid="uid://ccd1n16ewgfvm" path="res://MODELOS/MAPA 3/Pinos fondo.glb" id="12_hfjo1"]
+[ext_resource type="PackedScene" uid="uid://cbm34q5j54ldg" path="res://MODELOS/MAPA 1 Y 2/Pintura.glb" id="12_l1lul"]
+[ext_resource type="PackedScene" uid="uid://7nj4i0k2dmib" path="res://MODELOS/MAPA 1 Y 2/Paso.glb" id="13_1l5xk"]
+[ext_resource type="PackedScene" uid="uid://bo32tk7dstad5" path="res://MODELOS/MAPA 3/Arboles fondo.glb" id="13_l1lul"]
+[ext_resource type="PackedScene" uid="uid://bi1h7f7e5fvgh" path="res://MODELOS/MAPA 3/Arboles altos fondo.glb" id="14_1l5xk"]
+[ext_resource type="PackedScene" uid="uid://cqyy33gf5dkw8" path="res://MODELOS/MAPA 1 Y 2/Letrero 1.glb" id="15_1l5xk"]
+[ext_resource type="PackedScene" uid="uid://cmel82rojsao7" path="res://MODELOS/MAPA 1 Y 2/Letrero 2.glb" id="16_uyt8m"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_uyt8m"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_viwcb"]
+sky_material = SubResource("ProceduralSkyMaterial_uyt8m")
+
+[sub_resource type="Environment" id="Environment_v1v01"]
+background_mode = 2
+sky = SubResource("Sky_viwcb")
+tonemap_mode = 2
+glow_enabled = true
+fog_enabled = true
+fog_mode = 1
+fog_light_color = Color(0.5176471, 0.5529412, 0.60784316, 1)
+fog_density = 1.0
+fog_depth_begin = 0.0
+fog_depth_end = 240.9
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_rcy3m"]
+size = Vector3(16.185352, 10.232208, 0.07421875)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_rqdt1"]
+size = Vector3(15.508679, 10.232208, 0.07421875)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_hlrx2"]
+size = Vector3(19.187218, 10.232208, 0.07421875)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_bndtf"]
+size = Vector3(23.785456, 10.232208, 0.07421875)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_aqfpc"]
+size = Vector3(12.870852, 10.232208, 0.07421875)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_k2wnx"]
+size = Vector3(12.411012, 10.232208, 0.07421875)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_uyt8m"]
+load_path = "res://.godot/imported/Niebla 2.webp-a10432b9fec3fc95050c0979f071d7ac.s3tc.ctex"
+
+[node name="Seccion1" type="Node3D" unique_id=561212832]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=487599417]
+environment = SubResource("Environment_v1v01")
+
+[node name="MAPA 1 Y 22" parent="." unique_id=616135401 instance=ExtResource("1_yqfl2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32.358017, 0.4967308, -5.466874)
+
+[node name="Carpa" parent="." unique_id=1571979243 instance=ExtResource("2_xovbl")]
+transform = Transform3D(-0.26139578, 0.059027605, 0.96342504, 0.015456523, 0.9982562, -0.056968015, -0.9651079, 4.1180197e-09, -0.26185235, 18.721361, 0.90251946, 28.925173)
+metadata/_edit_lock_ = true
+
+[node name="Mandamientos" parent="." unique_id=999986881 instance=ExtResource("3_e8cge")]
+transform = Transform3D(0.45070767, 0.06345452, -0.8904135, -0.0007744563, 0.99749774, 0.07069375, 0.89267135, -0.031172628, 0.44962892, 15.815756, 0.5776844, 10.621023)
+
+[node name="Binoculares" parent="." unique_id=293745786 instance=ExtResource("4_2ckk8")]
+transform = Transform3D(-0.5093933, 0.09086019, 0.8557237, 0.0938036, 0.9943474, -0.04973997, -0.8554059, 0.054932743, -0.5150368, 19.462175, 0.88296205, 25.941963)
+
+[node name="Ovejas" parent="." unique_id=634155446 instance=ExtResource("5_ykn14")]
+transform = Transform3D(0.25333887, -0.08092457, 1.2392366, 0.017670747, 1.1601852, 0.086438514, -0.9703623, 0, 0.3251097, 16.518436, 0.2481054, 26.708124)
+
+[node name="Biblia" parent="." unique_id=1262992799 instance=ExtResource("6_trnem")]
+transform = Transform3D(-0.45214993, 0.0908602, 0.88730216, 0.090337954, 0.9943476, -0.055787444, -0.8873555, 0.054932762, -0.45780224, 19.332577, 1.0905786, 25.700209)
+
+[node name="Binoculares2" parent="." unique_id=930493528 instance=ExtResource("4_2ckk8")]
+transform = Transform3D(0.3356056, 0.010726062, -0.9419418, 0.0035557747, 0.9999137, 0.012653125, 0.941996, -0.00759577, 0.3355383, 16.092237, 2.1556463, 17.407393)
+
+[node name="Biblia2" parent="." unique_id=1176629478 instance=ExtResource("6_trnem")]
+transform = Transform3D(0.27307963, 0.010726089, -0.9619317, 0.0043783113, 0.99991375, 0.012392551, 0.96198153, -0.0075957775, 0.27300906, 16.189182, 2.338099, 17.682455)
+
+[node name="Fogata" parent="." unique_id=328625121 instance=ExtResource("7_cj2vl")]
+transform = Transform3D(-0.70976746, 0, 0.70443606, 0, 1, 0, -0.70443606, 0, -0.70976746, 17.524742, 1.2573907, 24.99563)
+metadata/_edit_lock_ = true
+
+[node name="Fondo mapa 3" parent="." unique_id=2121909699 instance=ExtResource("8_xovbl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32.20349, 0.5419136, -5.504174)
+
+[node name="Fondo mapa montaña" parent="." unique_id=284371775 instance=ExtResource("9_e8cge")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32.471, 0.50896454, -5.368234)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1737390671]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.690384, 3.5327637, 30.653044)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=531708534]
+transform = Transform3D(-0.0078015327, 0, -0.99996954, 0, 1, 0, 0.99996954, 0, -0.0078015327, 2.7878609, 2.8663924, -2.8963585)
+shape = SubResource("BoxShape3D_rcy3m")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="StaticBody3D" unique_id=86138123]
+transform = Transform3D(-0.0078015327, 0, -0.99996954, 0, 1, 0, 0.99996954, 0, -0.0078015327, -10.212653, 2.8663943, -7.3814697)
+shape = SubResource("BoxShape3D_rqdt1")
+
+[node name="StaticBody3D2" type="StaticBody3D" parent="." unique_id=1588016498]
+transform = Transform3D(0.9830827, 0, -0.18316214, 0, 1, 0, 0.18316214, 0, 0.9830827, 19.122936, 3.5327637, 25.212276)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D2" unique_id=1730413424]
+transform = Transform3D(0.27298552, 0, -0.96201813, 0, 1, 0, 0.96201813, 0, 0.27298552, 5.9468994, 2.8663924, -0.22387123)
+shape = SubResource("BoxShape3D_hlrx2")
+
+[node name="StaticBody3D3" type="StaticBody3D" parent="." unique_id=540759453]
+transform = Transform3D(0.9830827, 0, -0.18316214, 0, 1, 0, 0.18316214, 0, 0.9830827, 19.122936, 3.5327637, 25.212276)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D3" unique_id=1040241694]
+transform = Transform3D(0.99004614, 0, 0.1407457, 0, 1, 0, -0.1407457, 0, 0.99004614, -8.543766, 2.8663924, -7.6835194)
+shape = SubResource("BoxShape3D_bndtf")
+
+[node name="StaticBody3D4" type="StaticBody3D" parent="." unique_id=1617041406]
+transform = Transform3D(0.9830827, 0, -0.18316214, 0, 1, 0, 0.18316214, 0, 0.9830827, 20.213997, 3.5327637, 44.38159)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D4" unique_id=283863424]
+transform = Transform3D(0.97787833, 0, 0.20917487, 0, 1, 0, -0.20917487, 0, 0.97787833, -2.5205002, 2.8663924, -8.498615)
+shape = SubResource("BoxShape3D_aqfpc")
+
+[node name="StaticBody3D7" type="StaticBody3D" parent="." unique_id=1427275951]
+transform = Transform3D(-0.63923776, 0, -0.76900923, 0, 1, 0, 0.76900923, 0, -0.63923776, 9.988591, 3.039504, 30.16)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D7" unique_id=1339488901]
+transform = Transform3D(0.5789825, 0, -0.81534016, 0, 1, 0, 0.81534016, 0, 0.5789825, 1.8465977, 2.8663921, 1.6130295)
+shape = SubResource("BoxShape3D_k2wnx")
+
+[node name="Pintura" parent="." unique_id=430946237 instance=ExtResource("12_l1lul")]
+transform = Transform3D(0.5758046, 0, -0.8175873, 0, 1, 0, 0.8175873, 0, 0.5758046, 14.885055, 2.4796872, 17.638893)
+
+[node name="Pintura2" parent="." unique_id=212623102 instance=ExtResource("12_l1lul")]
+transform = Transform3D(0.3260317, 1.4413611e-08, -0.410298, 0.08868086, 0.98148036, 0.055354316, 0.4543604, -0.19156276, 0.28361028, 15.7885475, 1.3161693, 26.0257)
+
+[node name="Paso" parent="." unique_id=1966226286 instance=ExtResource("13_1l5xk")]
+transform = Transform3D(0.5445804, 0, -0.8387086, -0.12247766, 0.98928, -0.079525754, 0.82971764, 0.14603122, 0.53874254, 15.365637, 1.3246427, 19.36517)
+
+[node name="Pinos fondo" parent="." unique_id=1917077219 instance=ExtResource("12_hfjo1")]
+transform = Transform3D(0.451267, 0, 0.892389, 0, 1, 0, -0.892389, 0, 0.451267, -26.269814, 0.5595124, 30.12103)
+
+[node name="Pinos fondo2" parent="." unique_id=1901363106 instance=ExtResource("12_hfjo1")]
+transform = Transform3D(0.6311904, 0, 0.77562803, 0, 1, 0, -0.77562803, 0, 0.6311904, -28.163422, 0.8811667, 29.402962)
+
+[node name="Pinos fondo3" parent="." unique_id=1075783493 instance=ExtResource("12_hfjo1")]
+transform = Transform3D(0.9163697, 0, 0.40033305, 0, 1, 0, -0.40033305, 0, 0.9163697, -29.548655, 1.2987552, 27.669188)
+
+[node name="Pinos fondo4" parent="." unique_id=673359348 instance=ExtResource("12_hfjo1")]
+transform = Transform3D(0.9895762, 0, -0.14401075, 0, 1, 0, 0.14401075, 0, 0.9895762, -29.84324, 1.420371, 25.448444)
+
+[node name="Pinos fondo5" parent="." unique_id=926338874 instance=ExtResource("12_hfjo1")]
+transform = Transform3D(0.74393845, 0, -0.66824806, 0, 1, 0, 0.66824806, 0, 0.74393845, -29.147867, 1.3305576, 23.21741)
+
+[node name="Pinos fondo6" parent="." unique_id=46808057 instance=ExtResource("12_hfjo1")]
+transform = Transform3D(0.7079456, 0, -0.706267, 0, 1, 0, 0.706267, 0, 0.7079456, -26.54783, 1.3197432, 22.150967)
+
+[node name="Pinos fondo7" parent="." unique_id=1050224342 instance=ExtResource("12_hfjo1")]
+transform = Transform3D(0.70109594, 0, -0.71306676, 0, 1, 0, 0.71306676, 0, 0.70109594, -24.973518, 1.3197432, 19.979376)
+
+[node name="Arboles fondo" parent="." unique_id=1785475134 instance=ExtResource("13_l1lul")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -47.677803, 0.40961254, 34.48665)
+
+[node name="Arboles fondo2" parent="." unique_id=1628285328 instance=ExtResource("13_l1lul")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -51.49378, 0.40961254, 37.63553)
+
+[node name="Arboles fondo3" parent="." unique_id=1935305072 instance=ExtResource("13_l1lul")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -56.7641, 0.40961254, 36.087894)
+
+[node name="Arboles fondo4" parent="." unique_id=482271175 instance=ExtResource("13_l1lul")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54.487263, 0.40961254, 31.125294)
+
+[node name="Arboles fondo5" parent="." unique_id=1496966430 instance=ExtResource("13_l1lul")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -60.205597, 0.40961254, 32.08785)
+
+[node name="Arboles altos fondo" parent="." unique_id=987857126 instance=ExtResource("14_1l5xk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38.19068, 1.560677, 19.261604)
+
+[node name="Arboles altos fondo2" parent="." unique_id=1197738776 instance=ExtResource("14_1l5xk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -48.711, 1.8817692, 14.027342)
+
+[node name="Arboles altos fondo3" parent="." unique_id=68015406 instance=ExtResource("14_1l5xk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -44.88243, 0.7545209, 20.625622)
+
+[node name="NIEBLA 1" type="Sprite3D" parent="." unique_id=1871054295]
+transform = Transform3D(0.31548345, 0, 0.9489311, 0, 1, 0, -0.9489311, 0, 0.31548345, -33.832092, 2.2903843, 12.168131)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 16" type="Sprite3D" parent="." unique_id=1449874949]
+transform = Transform3D(0.9915085, 0, 0.13004166, 0, 1, 0, -0.13004166, 0, 0.9915085, -27.965796, 2.4476905, 9.623889)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 22" type="Sprite3D" parent="." unique_id=921115332]
+transform = Transform3D(0.9591561, 0, 0.2828772, 0, 1, 0, -0.2828772, 0, 0.9591561, -27.965796, 4.9279933, 9.623889)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 20" type="Sprite3D" parent="." unique_id=1429531125]
+transform = Transform3D(0.9915085, 0, 0.13004166, 0, 1, 0, -0.13004166, 0, 0.9915085, -27.965796, 3.585967, 8.147334)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 23" type="Sprite3D" parent="." unique_id=488019298]
+transform = Transform3D(0.99992424, 0, -0.012304246, 0, 1, 0, 0.012304246, 0, 0.99992424, -12.205605, 2.4476905, 8.124351)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 26" type="Sprite3D" parent="." unique_id=466536233]
+transform = Transform3D(0.99992424, 0, -0.012304246, 0, 1, 0, 0.012304246, 0, 0.99992424, -5.029729, 1.7981441, 8.299315)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 33" type="Sprite3D" parent="." unique_id=519055262]
+transform = Transform3D(-0.008988291, 0, 0.9999595, 0, 1, 0, -0.9999595, 0, -0.008988291, 0.22718906, 1.6527078, 4.527838)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 38" type="Sprite3D" parent="." unique_id=1086606453]
+transform = Transform3D(-0.008988291, 0, 0.9999595, 0, 1, 0, -0.9999595, 0, -0.008988291, 1.6290033, 2.6717346, -4.1855865)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 40" type="Sprite3D" parent="." unique_id=1083009215]
+transform = Transform3D(0.71768886, 0, 0.69636387, 0, 1, 0, -0.69636387, 0, 0.71768886, -1.0562909, 1.77355, -1.0753503)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 49" type="Sprite3D" parent="." unique_id=750594205]
+transform = Transform3D(-0.037742525, 0, 0.9992876, 0, 1, 0, -0.9992876, 0, -0.037742525, 1.3774557, 1.77355, -25.851044)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 50" type="Sprite3D" parent="." unique_id=1902019897]
+transform = Transform3D(-0.037742525, 0, 0.9992876, 0, 1, 0, -0.9992876, 0, -0.037742525, 0.4902172, 2.463953, -25.851044)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 41" type="Sprite3D" parent="." unique_id=469183654]
+transform = Transform3D(0.71768886, 0, 0.69636387, 0, 1, 0, -0.69636387, 0, 0.71768886, -1.0562909, 3.9682684, -1.0753503)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 39" type="Sprite3D" parent="." unique_id=1708326824]
+transform = Transform3D(-0.008988291, 0, 0.9999595, 0, 1, 0, -0.9999595, 0, -0.008988291, 1.3748462, 3.8260987, -4.1855865)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 37" type="Sprite3D" parent="." unique_id=451855936]
+transform = Transform3D(-0.008988291, 0, 0.9999595, 0, 1, 0, -0.9999595, 0, -0.008988291, 1.8820376, 1.6307933, -4.161081)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 42" type="Sprite3D" parent="." unique_id=47028598]
+transform = Transform3D(-0.008988291, 0, 0.9999595, 0, 1, 0, -0.9999595, 0, -0.008988291, 1.8820376, 2.1780117, -12.7441635)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 45" type="Sprite3D" parent="." unique_id=1980176648]
+transform = Transform3D(-0.008988291, 0, 0.9999595, 0, 1, 0, -0.9999595, 0, -0.008988291, 2.0758576, 2.1780117, -21.423445)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 48" type="Sprite3D" parent="." unique_id=269376883]
+transform = Transform3D(-0.9983399, 0, 0.057598926, 0, 1, 0, -0.057598926, 0, -0.9983399, -2.359431, 2.1780117, -27.397604)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 52" type="Sprite3D" parent="." unique_id=1004015338]
+transform = Transform3D(-0.036469273, 0, 0.9993348, 0, 1, 0, -0.9993348, 0, -0.036469273, -5.5696144, 2.1780117, -31.507303)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 55" type="Sprite3D" parent="." unique_id=1686148602]
+transform = Transform3D(-0.036469273, 0, 0.9993348, 0.01461561, 0.9998932, 0.0005333754, -0.99922794, 0.014625341, -0.036465373, -5.5696144, 3.4356372, -40.214954)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 57" type="Sprite3D" parent="." unique_id=1111015730]
+transform = Transform3D(-0.036469273, 0, 0.9993348, 0.01461561, 0.9998932, 0.0005333754, -0.99922794, 0.014625341, -0.036465373, -5.6051207, 1.8628795, -47.312187)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 60" type="Sprite3D" parent="." unique_id=247331844]
+transform = Transform3D(-0.036469273, 0, 0.9993348, 0.01461561, 0.9998932, 0.0005333754, -0.99922794, 0.014625341, -0.036465373, -5.6051207, 1.8628795, -54.993385)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 62" type="Sprite3D" parent="." unique_id=1909862113]
+transform = Transform3D(0.99988335, -0.014613101, -0.0044370275, 0.01461561, 0.99989325, 0.0005333754, 0.004428748, -0.0005981629, 0.99999005, -1.6817698, 2.4480255, -55.724846)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 67" type="Sprite3D" parent="." unique_id=409187042]
+transform = Transform3D(0.99988335, -0.014613101, -0.0044370275, 0.01461561, 0.99989325, 0.0005333754, 0.004428748, -0.0005981629, 0.99999005, 31.631134, 2.120692, -54.986504)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 71" type="Sprite3D" parent="." unique_id=2005932425]
+transform = Transform3D(0.99988335, -0.014613101, -0.0044370275, 0.01461561, 0.99989325, 0.0005333754, 0.004428748, -0.0005981629, 0.99999005, 39.703217, 2.120692, -54.986504)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 73" type="Sprite3D" parent="." unique_id=1228827964]
+transform = Transform3D(-0.013380984, 0.0007289755, -0.9999101, 0.014615611, 0.99989337, 0.00053337537, 0.99980354, -0.0146071585, -0.013390221, 42.327362, 2.120692, -50.574604)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 98" type="Sprite3D" parent="." unique_id=61460217]
+transform = Transform3D(-0.013380984, 0.0007289755, -0.9999101, 0.014615611, 0.99989337, 0.00053337537, 0.99980354, -0.0146071585, -0.013390221, 42.853043, 3.6669023, -50.574604)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 99" type="Sprite3D" parent="." unique_id=2003575487]
+transform = Transform3D(-0.013380984, 0.0007289755, -0.9999101, 0.014615611, 0.99989337, 0.00053337537, 0.99980354, -0.0146071585, -0.013390221, 42.853043, 3.6669023, -42.48473)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 100" type="Sprite3D" parent="." unique_id=34879313]
+transform = Transform3D(-0.013380984, 0.0007289755, -0.9999101, 0.014615611, 0.99989337, 0.00053337537, 0.99980354, -0.0146071585, -0.013390221, 42.853043, 3.6669023, -34.172073)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 101" type="Sprite3D" parent="." unique_id=546907907]
+transform = Transform3D(-0.013380984, 0.0007289755, -0.9999101, 0.014615611, 0.99989337, 0.00053337537, 0.99980354, -0.0146071585, -0.013390221, 42.853043, 3.6669023, -25.781609)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 102" type="Sprite3D" parent="." unique_id=1665828170]
+transform = Transform3D(-0.013380984, 0.0007289755, -0.9999101, 0.014615611, 0.99989337, 0.00053337537, 0.99980354, -0.0146071585, -0.013390221, 42.853043, 3.6669023, -17.529007)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 103" type="Sprite3D" parent="." unique_id=357687912]
+transform = Transform3D(-0.013380984, 0.0007289755, -0.9999101, 0.014615611, 0.99989337, 0.00053337537, 0.99980354, -0.0146071585, -0.013390221, 42.853043, 3.6669023, -9.13565)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 104" type="Sprite3D" parent="." unique_id=1209578293]
+transform = Transform3D(-0.013380984, 0.0007289755, -0.9999101, 0.014615611, 0.99989337, 0.00053337537, 0.99980354, -0.0146071585, -0.013390221, 42.853043, 3.6669023, -0.45745277)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 105" type="Sprite3D" parent="." unique_id=2025301841]
+transform = Transform3D(-0.013380984, 0.0007289755, -0.9999101, 0.014615611, 0.99989337, 0.00053337537, 0.99980354, -0.0146071585, -0.013390221, 42.853043, 3.6669023, 8.226986)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 106" type="Sprite3D" parent="." unique_id=117578219]
+transform = Transform3D(-0.013380984, 0.0007289755, -0.9999101, 0.014615611, 0.99989337, 0.00053337537, 0.99980354, -0.0146071585, -0.013390221, 42.853043, 3.6669023, 17.055485)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 107" type="Sprite3D" parent="." unique_id=1753160760]
+transform = Transform3D(-0.013380984, 0.0007289755, -0.9999101, 0.014615611, 0.99989337, 0.00053337537, 0.99980354, -0.0146071585, -0.013390221, 42.853043, 3.6669023, 25.87682)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 126" type="Sprite3D" parent="." unique_id=1051262753]
+transform = Transform3D(-0.013380984, 0.0007289755, -0.9999101, 0.014615611, 0.99989337, 0.00053337537, 0.99980354, -0.0146071585, -0.013390221, 42.853043, 5.6148367, 41.144836)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 127" type="Sprite3D" parent="." unique_id=1017006613]
+transform = Transform3D(-0.013380984, 0.0007289755, -0.9999101, 0.014615611, 0.99989337, 0.00053337537, 0.99980354, -0.0146071585, -0.013390221, 42.853043, 5.6148367, 33.42321)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 128" type="Sprite3D" parent="." unique_id=1920684033]
+transform = Transform3D(-0.013380984, 0.0007289755, -0.9999101, 0.014615611, 0.99989337, 0.00053337537, 0.99980354, -0.0146071585, -0.013390221, 42.853043, 5.6148367, 20.583725)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 129" type="Sprite3D" parent="." unique_id=2081966416]
+transform = Transform3D(-0.013380984, 0.0007289755, -0.9999101, 0.014615611, 0.99989337, 0.00053337537, 0.99980354, -0.0146071585, -0.013390221, 42.853043, 5.6148367, 6.8439064)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 130" type="Sprite3D" parent="." unique_id=718779509]
+transform = Transform3D(-0.013380984, 0.0007289755, -0.9999101, 0.014615611, 0.99989337, 0.00053337537, 0.99980354, -0.0146071585, -0.013390221, 42.853043, 5.6148367, -0.6446276)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 131" type="Sprite3D" parent="." unique_id=1716965850]
+transform = Transform3D(-0.013380984, 0.0007289755, -0.9999101, 0.014615611, 0.99989337, 0.00053337537, 0.99980354, -0.0146071585, -0.013390221, 42.853043, 5.6148367, -14.620383)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 132" type="Sprite3D" parent="." unique_id=1281520728]
+transform = Transform3D(-0.013380984, 0.0007289755, -0.9999101, 0.014615611, 0.99989337, 0.00053337537, 0.99980354, -0.0146071585, -0.013390221, 42.853043, 5.6148367, -30.708946)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 133" type="Sprite3D" parent="." unique_id=1178092422]
+transform = Transform3D(-0.013380984, 0.0007289755, -0.9999101, 0.014615611, 0.99989337, 0.00053337537, 0.99980354, -0.0146071585, -0.013390221, 42.853043, 5.6148367, -37.66443)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 108" type="Sprite3D" parent="." unique_id=538959460]
+transform = Transform3D(-0.013380984, 0.0007289755, -0.9999101, 0.014615611, 0.99989337, 0.00053337537, 0.99980354, -0.0146071585, -0.013390221, 42.853043, 3.6669023, 34.854893)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 109" type="Sprite3D" parent="." unique_id=867552768]
+transform = Transform3D(-0.013380984, 0.0007289755, -0.9999101, 0.014615611, 0.99989337, 0.00053337537, 0.99980354, -0.0146071585, -0.013390221, 42.853043, 3.6669023, 41.051323)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 74" type="Sprite3D" parent="." unique_id=2067573811]
+transform = Transform3D(-0.013380984, 0.0007289755, -0.9999101, 0.014615611, 0.99989337, 0.00053337537, 0.99980354, -0.0146071585, -0.013390221, 42.327362, 2.120692, -42.3606)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 75" type="Sprite3D" parent="." unique_id=1108960324]
+transform = Transform3D(-0.013380984, 0.0007289755, -0.9999101, 0.014615611, 0.99989337, 0.00053337537, 0.99980354, -0.0146071585, -0.013390221, 42.327362, 2.120692, -34.04632)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 76" type="Sprite3D" parent="." unique_id=76994133]
+transform = Transform3D(-0.013380984, 0.0007289755, -0.9999101, 0.014615611, 0.99989337, 0.00053337537, 0.99980354, -0.0146071585, -0.013390221, 42.327362, 2.120692, -25.575493)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 77" type="Sprite3D" parent="." unique_id=1227553233]
+transform = Transform3D(-0.013380984, 0.0007289755, -0.9999101, 0.014615611, 0.99989337, 0.00053337537, 0.99980354, -0.0146071585, -0.013390221, 42.327362, 2.120692, -17.888548)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 78" type="Sprite3D" parent="." unique_id=275313777]
+transform = Transform3D(-0.013380984, 0.0007289755, -0.9999101, 0.014615611, 0.99989337, 0.00053337537, 0.99980354, -0.0146071585, -0.013390221, 42.327362, 2.120692, -9.487883)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 79" type="Sprite3D" parent="." unique_id=935015151]
+transform = Transform3D(-0.013380984, 0.0007289755, -0.9999101, 0.014615611, 0.99989337, 0.00053337537, 0.99980354, -0.0146071585, -0.013390221, 42.327362, 2.120692, -1.1105366)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 80" type="Sprite3D" parent="." unique_id=1158660072]
+transform = Transform3D(-0.013380984, 0.0007289755, -0.9999101, 0.014615611, 0.99989337, 0.00053337537, 0.99980354, -0.0146071585, -0.013390221, 42.327362, 2.120692, 7.266362)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 81" type="Sprite3D" parent="." unique_id=746621891]
+transform = Transform3D(-0.013380984, 0.0007289755, -0.9999101, 0.014615611, 0.99989337, 0.00053337537, 0.99980354, -0.0146071585, -0.013390221, 42.327362, 2.120692, 15.064631)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 82" type="Sprite3D" parent="." unique_id=618987683]
+transform = Transform3D(-0.013380984, 0.0007289755, -0.9999101, 0.014615611, 0.99989337, 0.00053337537, 0.99980354, -0.0146071585, -0.013390221, 42.327362, 2.120692, 23.246552)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 83" type="Sprite3D" parent="." unique_id=1875278736]
+transform = Transform3D(-0.013380984, 0.0007289755, -0.9999101, 0.014615611, 0.99989337, 0.00053337537, 0.99980354, -0.0146071585, -0.013390221, 42.327362, 2.120692, 31.533749)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 84" type="Sprite3D" parent="." unique_id=1614837120]
+transform = Transform3D(-0.013380984, 0.0007289755, -0.9999101, 0.014615611, 0.99989337, 0.00053337537, 0.99980354, -0.0146071585, -0.013390221, 42.327362, 2.120692, 39.66179)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 85" type="Sprite3D" parent="." unique_id=151035128]
+transform = Transform3D(-0.9997969, 0.014606801, 0.013878921, 0.01461561, 0.9998933, 0.00053337525, -0.013869649, 0.0007361154, -0.99990356, 38.884228, 2.120692, 44.089394)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 110" type="Sprite3D" parent="." unique_id=1054991740]
+transform = Transform3D(-0.9997969, 0.014606801, 0.013878921, 0.01461561, 0.9998933, 0.00053337525, -0.013869649, 0.0007361154, -0.99990356, 39.921803, 3.2337701, 46.376377)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 111" type="Sprite3D" parent="." unique_id=472123262]
+transform = Transform3D(-0.9997969, 0.014606801, 0.013878921, 0.01461561, 0.9998933, 0.00053337525, -0.013869649, 0.0007361154, -0.99990356, 31.847431, 3.2337701, 46.376377)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 112" type="Sprite3D" parent="." unique_id=1998308145]
+transform = Transform3D(-0.9997969, 0.014606801, 0.013878921, 0.01461561, 0.9998933, 0.00053337525, -0.013869649, 0.0007361154, -0.99990356, 23.660315, 3.2337701, 46.376377)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 113" type="Sprite3D" parent="." unique_id=884323154]
+transform = Transform3D(-0.9997969, 0.014606801, 0.013878921, 0.01461561, 0.9998933, 0.00053337525, -0.013869649, 0.0007361154, -0.99990356, 15.417801, 3.2337701, 46.376377)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 114" type="Sprite3D" parent="." unique_id=298291928]
+transform = Transform3D(-0.9997969, 0.014606801, 0.013878921, 0.01461561, 0.9998933, 0.00053337525, -0.013869649, 0.0007361154, -0.99990356, 7.1357193, 3.2337701, 46.376377)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 115" type="Sprite3D" parent="." unique_id=1576563472]
+transform = Transform3D(-0.9997969, 0.014606801, 0.013878921, 0.01461561, 0.9998933, 0.00053337525, -0.013869649, 0.0007361154, -0.99990356, -1.3732557, 3.2337701, 46.376377)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 116" type="Sprite3D" parent="." unique_id=1735800250]
+transform = Transform3D(-0.9997969, 0.014606801, 0.013878921, 0.01461561, 0.9998933, 0.00053337525, -0.013869649, 0.0007361154, -0.99990356, -9.731719, 3.2337701, 46.376377)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 117" type="Sprite3D" parent="." unique_id=346070826]
+transform = Transform3D(-0.9997969, 0.014606801, 0.013878921, 0.01461561, 0.9998933, 0.00053337525, -0.013869649, 0.0007361154, -0.99990356, -17.87435, 3.2337701, 46.376377)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 118" type="Sprite3D" parent="." unique_id=980284453]
+transform = Transform3D(-0.9997969, 0.014606801, 0.013878921, 0.01461561, 0.9998933, 0.00053337525, -0.013869649, 0.0007361154, -0.99990356, -25.412674, 3.2337701, 46.376377)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 120" type="Sprite3D" parent="." unique_id=1581168593]
+transform = Transform3D(-0.9997969, 0.014606801, 0.013878921, 0.01461561, 0.9998933, 0.00053337525, -0.013869649, 0.0007361154, -0.99990356, -25.412674, 5.4564486, 44.230507)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 121" type="Sprite3D" parent="." unique_id=1929405957]
+transform = Transform3D(-0.9997969, 0.014606801, 0.013878921, 0.01461561, 0.9998933, 0.00053337525, -0.013869649, 0.0007361154, -0.99990356, -17.375467, 5.4564486, 44.230507)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 122" type="Sprite3D" parent="." unique_id=802222559]
+transform = Transform3D(-0.9997969, 0.014606801, 0.013878921, 0.01461561, 0.9998933, 0.00053337525, -0.013869649, 0.0007361154, -0.99990356, -5.61987, 5.4564486, 44.230507)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 123" type="Sprite3D" parent="." unique_id=1477651409]
+transform = Transform3D(-0.9997969, 0.014606801, 0.013878921, 0.01461561, 0.9998933, 0.00053337525, -0.013869649, 0.0007361154, -0.99990356, 7.6049976, 5.4564486, 44.230507)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 124" type="Sprite3D" parent="." unique_id=670599436]
+transform = Transform3D(-0.9997969, 0.014606801, 0.013878921, 0.01461561, 0.9998933, 0.00053337525, -0.013869649, 0.0007361154, -0.99990356, 15.778788, 5.4564486, 44.230507)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 125" type="Sprite3D" parent="." unique_id=1845411626]
+transform = Transform3D(-0.9997969, 0.014606801, 0.013878921, 0.01461561, 0.9998933, 0.00053337525, -0.013869649, 0.0007361154, -0.99990356, 29.11347, 5.4564486, 44.230507)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 119" type="Sprite3D" parent="." unique_id=1677817305]
+transform = Transform3D(-0.9997969, 0.014606801, 0.013878921, 0.01461561, 0.9998933, 0.00053337525, -0.013869649, 0.0007361154, -0.99990356, -33.64279, 3.2337701, 46.376377)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 86" type="Sprite3D" parent="." unique_id=1417940074]
+transform = Transform3D(-0.9997969, 0.014606801, 0.013878921, 0.01461561, 0.9998933, 0.00053337525, -0.013869649, 0.0007361154, -0.99990356, 31.290348, 2.120692, 44.089394)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 87" type="Sprite3D" parent="." unique_id=1310135432]
+transform = Transform3D(-0.9997969, 0.014606801, 0.013878921, 0.01461561, 0.9998933, 0.00053337525, -0.013869649, 0.0007361154, -0.99990356, 22.99471, 2.120692, 44.089394)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 88" type="Sprite3D" parent="." unique_id=111336848]
+transform = Transform3D(-0.9997969, 0.014606801, 0.013878921, 0.01461561, 0.9998933, 0.00053337525, -0.013869649, 0.0007361154, -0.99990356, 14.638882, 2.120692, 44.089394)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 89" type="Sprite3D" parent="." unique_id=1843515007]
+transform = Transform3D(-0.9997969, 0.014606801, 0.013878921, 0.01461561, 0.9998933, 0.00053337525, -0.013869649, 0.0007361154, -0.99990356, 6.4844894, 2.120692, 44.089394)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 90" type="Sprite3D" parent="." unique_id=1678070943]
+transform = Transform3D(-0.9997969, 0.014606801, 0.013878921, 0.01461561, 0.9998933, 0.00053337525, -0.013869649, 0.0007361154, -0.99990356, -1.8681059, 2.120692, 44.089394)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 91" type="Sprite3D" parent="." unique_id=2076375560]
+transform = Transform3D(-0.9997969, 0.014606801, 0.013878921, 0.01461561, 0.9998933, 0.00053337525, -0.013869649, 0.0007361154, -0.99990356, -10.311869, 2.120692, 44.089394)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 92" type="Sprite3D" parent="." unique_id=1162380031]
+transform = Transform3D(-0.9997969, 0.014606801, 0.013878921, 0.01461561, 0.9998933, 0.00053337525, -0.013869649, 0.0007361154, -0.99990356, -18.486368, 2.120692, 44.089394)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 93" type="Sprite3D" parent="." unique_id=1975418601]
+transform = Transform3D(-0.9997969, 0.014606801, 0.013878921, 0.01461561, 0.9998933, 0.00053337525, -0.013869649, 0.0007361154, -0.99990356, -26.73223, 2.120692, 44.089394)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 94" type="Sprite3D" parent="." unique_id=650434216]
+transform = Transform3D(-0.9997969, 0.014606801, 0.013878921, 0.01461561, 0.9998933, 0.00053337525, -0.013869649, 0.0007361154, -0.99990356, -34.693634, 2.120692, 44.089394)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 95" type="Sprite3D" parent="." unique_id=1063898798]
+transform = Transform3D(-0.40186033, 0.0053856075, 0.9156852, 0.014615609, 0.9998933, 0.00053337665, -0.91558415, 0.013597635, -0.40189606, -38.338722, 4.734288, 41.543285)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 97" type="Sprite3D" parent="." unique_id=1361842921]
+transform = Transform3D(-0.40186033, 0.0053856075, 0.9156852, 0.014615609, 0.9998933, 0.00053337665, -0.91558415, 0.013597635, -0.40189606, -38.338722, 2.8489008, 41.543285)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 96" type="Sprite3D" parent="." unique_id=410436345]
+transform = Transform3D(-0.40186033, 0.0053856075, 0.9156852, 0.014615609, 0.9998933, 0.00053337665, -0.91558415, 0.013597635, -0.40189606, -36.5714, 2.120692, 41.543285)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 72" type="Sprite3D" parent="." unique_id=341319160]
+transform = Transform3D(0.99988335, -0.014613101, -0.0044370275, 0.01461561, 0.99989325, 0.0005333754, 0.004428748, -0.0005981629, 0.99999005, 38.968735, 3.7503023, -55.5759)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 68" type="Sprite3D" parent="." unique_id=1149864840]
+transform = Transform3D(0.99988335, -0.014613101, -0.0044370275, 0.01461561, 0.99989325, 0.0005333754, 0.004428748, -0.0005981629, 0.99999005, 31.631134, 3.689849, -55.441174)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 69" type="Sprite3D" parent="." unique_id=1948515676]
+transform = Transform3D(0.99988335, -0.014613101, -0.0044370275, 0.01461561, 0.99989325, 0.0005333754, 0.004428748, -0.0005981629, 0.99999005, 31.631134, 3.689849, -55.441174)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 70" type="Sprite3D" parent="." unique_id=32117001]
+transform = Transform3D(0.99988335, -0.014613101, -0.0044370275, 0.01461561, 0.99989325, 0.0005333754, 0.004428748, -0.0005981629, 0.99999005, 31.631134, 5.393174, -55.83944)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 63" type="Sprite3D" parent="." unique_id=712311774]
+transform = Transform3D(0.99988335, -0.014613101, -0.0044370275, 0.01461561, 0.99989325, 0.0005333754, 0.004428748, -0.0005981629, 0.99999005, -1.976419, 4.2359276, -55.929565)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 64" type="Sprite3D" parent="." unique_id=415771427]
+transform = Transform3D(0.99988335, -0.014613101, -0.0044370275, 0.01461561, 0.99989325, 0.0005333754, 0.004428748, -0.0005981629, 0.99999005, -2.412981, 6.073595, -56.33987)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 65" type="Sprite3D" parent="." unique_id=2001333682]
+transform = Transform3D(0.54044366, -0.008348556, 0.84133863, 0.014615609, 0.99989325, 0.00053337566, -0.84125316, 0.012008417, 0.5405079, -6.3974695, 5.115983, -51.164192)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 66" type="Sprite3D" parent="." unique_id=1070152088]
+transform = Transform3D(0.54044366, -0.008348556, 0.84133863, 0.014615609, 0.99989325, 0.00053337566, -0.84125316, 0.012008417, 0.5405079, -6.3974695, 5.9544106, -54.51911)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 61" type="Sprite3D" parent="." unique_id=1963211608]
+transform = Transform3D(-0.036469273, 0, 0.9993348, 0.01461561, 0.9998932, 0.0005333754, -0.99922794, 0.014625341, -0.036465373, -5.736226, 3.735319, -54.993385)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 58" type="Sprite3D" parent="." unique_id=812387198]
+transform = Transform3D(-0.036469273, 0, 0.9993348, 0.01461561, 0.9998932, 0.0005333754, -0.99922794, 0.014625341, -0.036465373, -6.3280206, 3.2756553, -47.312187)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 59" type="Sprite3D" parent="." unique_id=346500139]
+transform = Transform3D(-0.036469273, 0, 0.9993348, 0.01461561, 0.9998932, 0.0005333754, -0.99922794, 0.014625341, -0.036465373, -7.0213833, 5.160293, -47.312187)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 56" type="Sprite3D" parent="." unique_id=2052592835]
+transform = Transform3D(-0.036469273, 0, 0.9993348, 0.01461561, 0.9998932, 0.0005333754, -0.99922794, 0.014625341, -0.036465373, -6.632085, 4.2988, -39.333176)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 53" type="Sprite3D" parent="." unique_id=551252214]
+transform = Transform3D(-0.036469273, 0, 0.9993348, 0, 1, 0, -0.9993348, 0, -0.036469273, -5.980324, 3.711222, -31.507303)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 54" type="Sprite3D" parent="." unique_id=673466462]
+transform = Transform3D(-0.036469273, 0, 0.9993348, 0, 1, 0, -0.9993348, 0, -0.036469273, -6.757263, 5.113627, -31.507303)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 51" type="Sprite3D" parent="." unique_id=2119229586]
+transform = Transform3D(-0.9983399, 0, 0.057598926, 0, 1, 0, -0.057598926, 0, -0.9983399, -2.359431, 3.7372808, -27.035492)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 46" type="Sprite3D" parent="." unique_id=395319978]
+transform = Transform3D(-0.008988291, 0, 0.9999595, 0, 1, 0, -0.9999595, 0, -0.008988291, 1.4127264, 2.774802, -21.423445)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 47" type="Sprite3D" parent="." unique_id=1999805417]
+transform = Transform3D(-0.008988291, 0, 0.9999595, 0, 1, 0, -0.9999595, 0, -0.008988291, 0.78080034, 3.6914568, -21.423445)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 43" type="Sprite3D" parent="." unique_id=2027945405]
+transform = Transform3D(-0.008988291, 0, 0.9999595, 0, 1, 0, -0.9999595, 0, -0.008988291, 1.4734457, 3.2459662, -12.7441635)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 44" type="Sprite3D" parent="." unique_id=153431347]
+transform = Transform3D(-0.008988291, 0, 0.9999595, 0, 1, 0, -0.9999595, 0, -0.008988291, 1.0577984, 4.833094, -12.7441635)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 35" type="Sprite3D" parent="." unique_id=826549546]
+transform = Transform3D(-0.008988291, 0, 0.9999595, 0, 1, 0, -0.9999595, 0, -0.008988291, -0.31621933, 3.348955, 4.527838)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 34" type="Sprite3D" parent="." unique_id=1125412113]
+transform = Transform3D(-0.008988291, 0, 0.9999595, 0, 1, 0, -0.9999595, 0, -0.008988291, -0.081024885, 2.2973258, 4.527838)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 36" type="Sprite3D" parent="." unique_id=195597534]
+transform = Transform3D(0.57238925, 0, 0.81998205, 0, 1, 0, -0.81998205, 0, 0.57238925, -2.2678206, 4.5761228, 4.822404)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 27" type="Sprite3D" parent="." unique_id=48169350]
+transform = Transform3D(0.99992424, 0, -0.012304246, 0, 1, 0, 0.012304246, 0, 0.99992424, -5.029729, 2.3168929, 7.912072)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 28" type="Sprite3D" parent="." unique_id=1379541099]
+transform = Transform3D(0.99992424, 0, -0.012304246, 0, 1, 0, 0.012304246, 0, 0.99992424, -5.029729, 3.2281315, 7.5819483)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 24" type="Sprite3D" parent="." unique_id=974634989]
+transform = Transform3D(0.99992424, 0, -0.012304246, 0, 1, 0, 0.012304246, 0, 0.99992424, -12.205605, 3.053681, 7.7711935)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 25" type="Sprite3D" parent="." unique_id=493734678]
+transform = Transform3D(0.99992424, 0, -0.012304246, 0, 1, 0, 0.012304246, 0, 0.99992424, -12.205605, 4.4501076, 7.416499)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 29" type="Sprite3D" parent="." unique_id=769569274]
+transform = Transform3D(0.99992424, 0, -0.012304246, 0, 1, 0, 0.012304246, 0, 0.99992424, -19.962118, 2.4874792, 8.909929)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 32" type="Sprite3D" parent="." unique_id=12333165]
+transform = Transform3D(0.99992424, 0, -0.012304246, 0, 1, 0, 0.012304246, 0, 0.99992424, -19.962118, 4.1047435, 8.057403)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 30" type="Sprite3D" parent="." unique_id=1775675768]
+transform = Transform3D(0.99992424, 0, -0.012304246, 0, 1, 0, 0.012304246, 0, 0.99992424, -19.962118, 2.901379, 8.503523)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 31" type="Sprite3D" parent="." unique_id=1756206796]
+transform = Transform3D(0.99992424, 0, -0.012304246, 0, 1, 0, 0.012304246, 0, 0.99992424, -19.962118, 2.901379, 8.503523)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 17" type="Sprite3D" parent="." unique_id=204798825]
+transform = Transform3D(0.9915085, 0, 0.13004166, 0, 1, 0, -0.13004166, 0, 0.9915085, -26.516748, 2.8781257, 8.899502)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 15" type="Sprite3D" parent="." unique_id=996670464]
+transform = Transform3D(0.50577784, 0, 0.86266375, 0, 1, 0, -0.86266375, 0, 0.50577784, -34.41971, 4.3220825, 12.168131)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 3" type="Sprite3D" parent="." unique_id=1565498386]
+transform = Transform3D(-0.32598063, 0, -0.94537646, 0, 1, 0, 0.94537646, 0, -0.32598063, -35.074455, 3.3895483, 19.920752)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 14" type="Sprite3D" parent="." unique_id=2052768900]
+transform = Transform3D(-0.32598063, 0, -0.94537646, 0, 1, 0, 0.94537646, 0, -0.32598063, -35.074455, 5.286691, 19.920752)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 5" type="Sprite3D" parent="." unique_id=1030404247]
+transform = Transform3D(-0.014607847, 0, -0.99989325, 0, 1, 0, 0.99989325, 0, -0.014607847, -37.19198, 2.6560783, 26.646887)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 13" type="Sprite3D" parent="." unique_id=299758691]
+transform = Transform3D(-0.014607847, 0, -0.99989325, 0, 1, 0, 0.99989325, 0, -0.014607847, -38.746704, 4.418234, 26.646887)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 8" type="Sprite3D" parent="." unique_id=819857435]
+transform = Transform3D(-0.06103107, 0, -0.9981358, 0, 1, 0, 0.9981358, 0, -0.06103107, -38.09114, 3.1929789, 32.95428)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 10" type="Sprite3D" parent="." unique_id=204774884]
+transform = Transform3D(0.11254427, 0, -0.9936466, 0, 1, 0, 0.9936466, 0, 0.11254427, -37.65791, 2.7671328, 35.029236)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 12" type="Sprite3D" parent="." unique_id=1739081512]
+transform = Transform3D(0.112318814, 0, -0.99367213, 0, 1, 0, 0.99367213, 0, 0.112318814, -37.65791, 5.015909, 35.029236)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 11" type="Sprite3D" parent="." unique_id=934294715]
+transform = Transform3D(0.13073389, 0, -0.9914175, 0, 1, 0, 0.9914175, 0, 0.13073389, -39.033558, 2.7671328, 35.276367)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 9" type="Sprite3D" parent="." unique_id=1251402979]
+transform = Transform3D(-0.014607847, 0, -0.99989325, 0, 1, 0, 0.99989325, 0, -0.014607847, -39.854618, 3.4433274, 32.95428)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 6" type="Sprite3D" parent="." unique_id=524258538]
+transform = Transform3D(-0.014607847, 0, -0.99989325, 0, 1, 0, 0.99989325, 0, -0.014607847, -37.714565, 3.5462294, 26.646887)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 7" type="Sprite3D" parent="." unique_id=1596399866]
+transform = Transform3D(-0.31157207, 0, -0.95022243, 0, 1, 0, 0.95022243, 0, -0.31157207, -36.33409, 3.3624816, 18.968739)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 4" type="Sprite3D" parent="." unique_id=80809484]
+transform = Transform3D(-0.32598063, 0, -0.94537646, 0, 1, 0, 0.94537646, 0, -0.32598063, -37.420116, 3.3895483, 19.91089)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="NIEBLA 2" type="Sprite3D" parent="." unique_id=367400397]
+transform = Transform3D(0.31548345, 0, 0.9489311, 0, 1, 0, -0.9489311, 0, 0.31548345, -35.057053, 3.2101126, 14.266814)
+modulate = Color(1, 1, 1, 0.5921569)
+texture = SubResource("CompressedTexture2D_uyt8m")
+
+[node name="Letrero 1" parent="." unique_id=656079038 instance=ExtResource("15_1l5xk")]
+transform = Transform3D(0.31192034, 0, 0.95010823, 0, 1, 0, -0.95010823, 0, 0.31192034, 17.449947, 1.0389624, 26.601242)
+
+[node name="Letrero 2" parent="." unique_id=246655698 instance=ExtResource("16_uyt8m")]
+transform = Transform3D(0.35823765, 0, -0.9336304, 0, 1, 0, 0.9336304, 0, 0.35823765, 12.802973, 3.1556592, 17.141123)

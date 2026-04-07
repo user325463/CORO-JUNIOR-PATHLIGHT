@@ -1,0 +1,72 @@
+[gd_scene format=3 uid="uid://c7d6aym6ccivg"]
+
+[ext_resource type="Script" uid="uid://ch5d3c0uv065u" path="res://control.gd" id="1_bw7nc"]
+[ext_resource type="Texture2D" uid="uid://bwnrjx6sthaui" path="res://18.png" id="2_na2pe"]
+[ext_resource type="Texture2D" uid="uid://c2s536njv7p3g" path="res://19.png" id="3_na2pe"]
+[ext_resource type="Texture2D" uid="uid://dnovnpm3bxc4a" path="res://20.png" id="4_qj2k4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qj2k4"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qj2k4"]
+texture = ExtResource("3_na2pe")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_na2pe"]
+texture = ExtResource("3_na2pe")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bcrrj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_uvvut"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_c48os"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_75itv"]
+texture = ExtResource("4_qj2k4")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_uf84i"]
+texture = ExtResource("4_qj2k4")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_tojmx"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6aojb"]
+
+[node name="Control" type="Control" unique_id=92125230]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_bw7nc")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1280660000]
+layout_mode = 0
+offset_right = 1151.0
+offset_bottom = 649.0
+texture = ExtResource("2_na2pe")
+expand_mode = 1
+
+[node name="Theo" type="Button" parent="." unique_id=1967941020]
+layout_mode = 0
+offset_left = 312.0
+offset_top = 102.0
+offset_right = 513.0
+offset_bottom = 597.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_qj2k4")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_qj2k4")
+theme_override_styles/hover = SubResource("StyleBoxTexture_na2pe")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_bcrrj")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_uvvut")
+
+[node name="Joy" type="Button" parent="Theo" unique_id=1938276912]
+layout_mode = 1
+anchors_preset = -1
+anchor_bottom = 0.079
+offset_left = 347.0
+offset_top = 3.0
+offset_right = 548.0
+offset_bottom = 458.895
+theme_override_styles/normal = SubResource("StyleBoxEmpty_c48os")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_75itv")
+theme_override_styles/hover = SubResource("StyleBoxTexture_uf84i")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_tojmx")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_6aojb")

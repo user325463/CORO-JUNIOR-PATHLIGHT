@@ -1,0 +1,58 @@
+[gd_scene format=3 uid="uid://dqb51joe3f4bo"]
+
+[ext_resource type="PackedScene" uid="uid://b3f5e2rxkqro1" path="res://Modelos2/MAPA 3.glb" id="1_dqu7n"]
+[ext_resource type="PackedScene" uid="uid://cge6nhkxxa3ux" path="res://Modelos3/MAPA 4 Y 5.glb" id="3_rl06c"]
+[ext_resource type="PackedScene" uid="uid://bkcixs3yg833b" path="res://Modelos3/Mapa7y8/MAPA 7 Y 8.glb" id="4_knykh"]
+[ext_resource type="PackedScene" uid="uid://dfx5ranujetlo" path="res://Modelos/MAPA 1 Y 2.glb" id="4_qju8f"]
+[ext_resource type="PackedScene" uid="uid://chhfsi3c8hoed" path="res://Modelos3/Mapa7y8/Templo.glb" id="5_dqu7n"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_db4kb"]
+
+[sub_resource type="Sky" id="Sky_db4kb"]
+sky_material = SubResource("ProceduralSkyMaterial_db4kb")
+
+[sub_resource type="Environment" id="Environment_db4kb"]
+background_mode = 2
+background_color = Color(1, 1, 1, 1)
+sky = SubResource("Sky_db4kb")
+ambient_light_source = 2
+ambient_light_color = Color(0.8413226, 0.8642151, 0.88369393, 1)
+ambient_light_energy = 10.0
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_mhawg"]
+
+[node name="Seccion1" type="Node3D" unique_id=561212832]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=2099351060]
+transform = Transform3D(0.23072965, 0.93508446, 0.26903707, -0.32648218, -0.1860684, 0.9267081, 0.9166098, -0.301655, 0.26235694, 21.184834, 17.909344, 13.349861)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="DirectionalLight3D" unique_id=2053631759]
+environment = SubResource("Environment_db4kb")
+
+[node name="MAPA 32" parent="." unique_id=190547584 instance=ExtResource("1_dqu7n")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 41.70278, 1.7410679, -8.125776)
+
+[node name="Camera3D" type="Camera3D" parent="MAPA 32" unique_id=1806350990]
+transform = Transform3D(-0.849712, -0.24617815, 0.46624655, -0.011692799, 0.89288473, 0.4501335, -0.52711743, 0.37703213, -0.7615734, 137.26553, 38.32302, -52.985596)
+fov = 74.11692
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MAPA 32" unique_id=1156256179]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MAPA 32/StaticBody3D" unique_id=45916819]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -177.00612, -179.3444, 124.63303)
+shape = SubResource("ConcavePolygonShape3D_mhawg")
+
+[node name="SpawnPoint" type="Marker3D" parent="." unique_id=2128742377]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.441137, 0, -10.833469)
+
+[node name="MAPA 4 Y 52" parent="." unique_id=304415251 instance=ExtResource("3_rl06c")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 49.735085, 3.069847, 19.93375)
+
+[node name="MAPA 1 Y 22" parent="." unique_id=927623458 instance=ExtResource("4_qju8f")]
+transform = Transform3D(-0.0066497326, 0, -0.9999778, 0, 1, 0, 0.9999778, 0, -0.0066497326, 41.30623, 0.7646866, -11.811333)
+
+[node name="MAPA 7 Y 82" parent="." unique_id=660977480 instance=ExtResource("4_knykh")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 49.68115, 2.402958, 17.642952)
+
+[node name="Templo" parent="." unique_id=429658384 instance=ExtResource("5_dqu7n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 86.759865, 17.14527, 64.63941)

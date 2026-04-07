@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://6ujgebbqbe6d"]
+
+[ext_resource type="Script" uid="uid://wumhafhi5cp3" path="res://portada.gd" id="1_3vq55"]
+[ext_resource type="Texture2D" uid="uid://d2myb547dk3tj" path="res://MENU DE JUEGO.png" id="1_bbh1a"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_oftn6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4ebwy"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_oh8p7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_sieyr"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_74ysa"]
+
+[node name="Control" type="Control" unique_id=1580649203]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_3vq55")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=829950021]
+layout_mode = 0
+offset_right = 1154.0
+offset_bottom = 653.0
+texture = ExtResource("1_bbh1a")
+expand_mode = 1
+
+[node name="Partida" type="Button" parent="." unique_id=1191342009]
+layout_mode = 0
+offset_left = 191.0
+offset_top = 384.0
+offset_right = 402.0
+offset_bottom = 415.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_oftn6")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_4ebwy")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_oh8p7")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_sieyr")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_74ysa")
+
+[connection signal="pressed" from="Partida" to="." method="_on_partida_pressed"]

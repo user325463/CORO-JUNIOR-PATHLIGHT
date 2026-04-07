@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://bwka62o5sb14a"]
+
+[ext_resource type="PackedScene" uid="uid://ddesmvgwuyhmo" path="res://Modelos2/Fogata.glb" id="4_mhawg"]
+[ext_resource type="PackedScene" uid="uid://6ybr4g0r006l" path="res://Seccion Fondo/MAPA FONDO 2.glb" id="5_naexr"]
+[ext_resource type="PackedScene" uid="uid://b3f5e2rxkqro1" path="res://Modelos2/MAPA 3.glb" id="6_0ihoe"]
+[ext_resource type="PackedScene" uid="uid://bi58oynercpfq" path="res://Seccion Fondo/MAPA FONDO 3.glb" id="6_ehcn1"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_db4kb"]
+
+[sub_resource type="Sky" id="Sky_db4kb"]
+sky_material = SubResource("ProceduralSkyMaterial_db4kb")
+
+[sub_resource type="Environment" id="Environment_db4kb"]
+background_mode = 2
+background_color = Color(1, 1, 1, 1)
+sky = SubResource("Sky_db4kb")
+ambient_light_source = 2
+ambient_light_color = Color(0.8413226, 0.8642151, 0.88369393, 1)
+ambient_light_energy = 10.0
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_mhawg"]
+
+[node name="Seccion1" type="Node3D" unique_id=561212832]
+
+[node name="MAPA FONDO 3" parent="." unique_id=125650647 instance=ExtResource("5_naexr")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 54.79322, 0.026432037, 37.07777)
+
+[node name="MAPA FONDO 4" parent="." unique_id=1310783305 instance=ExtResource("6_ehcn1")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 3.710907, 0, 74.420906)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=2099351060]
+transform = Transform3D(0.23072965, 0.93508446, 0.26903707, -0.32648218, -0.1860684, 0.9267081, 0.9166098, -0.301655, 0.26235694, 21.184834, 17.909344, 13.349861)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="DirectionalLight3D" unique_id=2053631759]
+environment = SubResource("Environment_db4kb")
+
+[node name="MAPA 32" parent="." unique_id=190547584 instance=ExtResource("6_0ihoe")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 52.12625, 1.4245663, -22.261604)
+
+[node name="Camera3D" type="Camera3D" parent="MAPA 32" unique_id=1806350990]
+transform = Transform3D(-0.025967585, 0, 0.9996628, 0, 1, 0, -0.9996628, 0, -0.025967585, 27.129799, 6.6689186, 27.375282)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MAPA 32" unique_id=1156256179]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MAPA 32/StaticBody3D" unique_id=45916819]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -177.00612, -179.3444, 124.63303)
+shape = SubResource("ConcavePolygonShape3D_mhawg")
+
+[node name="Fogata" parent="." unique_id=1195773472 instance=ExtResource("4_mhawg")]
+transform = Transform3D(1, 0, 0, 0, 0.9953728, -0.096088976, 0, 0.096088976, 0.9953728, 25.290285, 2.6008844, -10.510998)
+
+[node name="SpawnPoint" type="Marker3D" parent="." unique_id=2128742377]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.441137, 0, -10.833469)
